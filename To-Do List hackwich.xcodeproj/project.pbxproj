@@ -11,6 +11,8 @@
 		08AF78B32B62B6DB00A0DC1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AF78B22B62B6DB00A0DC1B /* ContentView.swift */; };
 		08AF78B52B62B6DD00A0DC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AF78B42B62B6DD00A0DC1B /* Assets.xcassets */; };
 		08AF78B82B62B6DD00A0DC1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AF78B72B62B6DD00A0DC1B /* Preview Assets.xcassets */; };
+		08AF78BF2B62BE7D00A0DC1B /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AF78BE2B62BE7D00A0DC1B /* ToDoList.swift */; };
+		08AF78C12B640C0E00A0DC1B /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AF78C02B640C0E00A0DC1B /* AddItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		08AF78B22B62B6DB00A0DC1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08AF78B42B62B6DD00A0DC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08AF78B72B62B6DD00A0DC1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08AF78BE2B62BE7D00A0DC1B /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		08AF78C02B640C0E00A0DC1B /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				08AF78B02B62B6DB00A0DC1B /* To_Do_List_hackwichApp.swift */,
 				08AF78B22B62B6DB00A0DC1B /* ContentView.swift */,
+				08AF78C02B640C0E00A0DC1B /* AddItemView.swift */,
+				08AF78BE2B62BE7D00A0DC1B /* ToDoList.swift */,
 				08AF78B42B62B6DD00A0DC1B /* Assets.xcassets */,
 				08AF78B62B62B6DD00A0DC1B /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AF78B32B62B6DB00A0DC1B /* ContentView.swift in Sources */,
+				08AF78BF2B62BE7D00A0DC1B /* ToDoList.swift in Sources */,
 				08AF78B12B62B6DB00A0DC1B /* To_Do_List_hackwichApp.swift in Sources */,
+				08AF78C12B640C0E00A0DC1B /* AddItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
