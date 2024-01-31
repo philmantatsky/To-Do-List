@@ -26,18 +26,21 @@ struct AddItemView: View {
                 TextField("Description", text: $description)
                 DatePicker("Due Date", selection: $dueDate, displayedComponents: .date)
             }
-            .sheet(isPresented: $showingAddItemView, content: {
-                AddItemView(toDoList: toDoList)
-            })
             .navigationBarTitle("Add New To-Do Item", displayMode: .inline)
-            .navigationBarItems(leading: EditButton(),
-                                trailing: Button(action: {
-                showingAddItemView = true }) {
-                    Image(systemName: "Plus")
-                          })
+            .navigationBarItems(trailing: Button("Save") {
+                if priority.count > 0 && description.count > 0 {
+                    let item = ToDoItem(id: UUID(), priority: priority,
+                                        description: description, dueDate: dueDate)
+                    toDoList.items.append(item)
+                    presentationMode.wrappedValue.dismiss()
                 }
+            })
         }
     }
-#Preview {
-    AddItemView(toDoList: ToDoList())
+}
+
+struct AddItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddItemView(toDoList: ToDoList())
+    }
 }
